@@ -9,9 +9,9 @@ public class PowerScore implements GameScore{
 	**/
 	public int calculateScore(int correctCount , int incorrectCount){
 		int result = 0;
-		result = result - (8*incorrectCount) + (5**correctCount)
+		result = (int) (result - (8*incorrectCount) + (Math.pow(5,correctCount)));
 
-		if (result < 0){
+		if (result < 0 || result == 1 ){
 			result = 0;
 		} 
 		if (result > 500 ){
