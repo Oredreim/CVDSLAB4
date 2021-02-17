@@ -5,6 +5,8 @@
  */
 package hangman.setup.guice;
 
+import hangman.*;
+
 /**
  *
  * @author 2106913
@@ -12,10 +14,9 @@ package hangman.setup.guice;
 
 
 import hangman.model.*;
-import hangman.model.dictionary.HangmanDictionary;
-import hangman.model.dictionary.FrenchDictionaryDataSource;
-import hangman.view.HangmanNoviolentoPanel;
-import hangman.view.HangmanPanel;
+import hangman.model.dictionary.*;
+import hangman.view.*;
+
 
 public class HangmanFactoryServices extends com.google.inject.AbstractModule {
 
@@ -23,6 +24,10 @@ public class HangmanFactoryServices extends com.google.inject.AbstractModule {
     protected void configure() {
         /* Guice dependency injection */
         bind(GameScore.class).to(OriginalScore.class); 
+        //*bono*
+        bind(Language.class).to(Spanish.class); 
+        bind(HangmanDictionary.class).to(SpanishDictionaryDataSource.class);
+        bind(HangmanPanel.class).to(HangmanStickmanPanel.class); 
     }
 
 }

@@ -29,7 +29,6 @@ public class GameModel {
     @Inject
     private GameScore score; 
     
-    
     private HangmanDictionary dictionary;
     
     private Scanner scan;
@@ -46,6 +45,8 @@ public class GameModel {
         incorrectCount = 0;
         correctCount = 0;
         gameScore = 100;
+        /******************/
+        score = new PowerScore(); 
         
     }
     
