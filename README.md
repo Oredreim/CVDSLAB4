@@ -66,7 +66,25 @@ principio de inversión de dependencias:
    implementarán las pruebas (GameScoreTest), en los
    comentarios iniciales, especifique las clases de equivalencia para
    las tres variantes de GameScore, e identifique
-   condiciones de frontera. 
+   condiciones de frontera.
+   
+   - Fronteras powerScore 
+   initial Score = 0
+   score <= 500 or score >  0
+   
+   - Fronteras  OriginalScore 
+   initial Score = 100
+   score > 0
+   
+   - Fronteras BonusScore 
+   initial Score = 0 
+   score > 0 
+   
+   
+   
+   
+   
+   
 
 7. Para cada clase de equivalencia y condición de frontera, implemente
    una prueba utilizando JUnit.
