@@ -15,4 +15,10 @@ public class BonusScore implements GameScore{
 		return result;
 	}
 	
+	@Override
+	public int reset() {
+		return 0;
+		
+	}
+	
 }

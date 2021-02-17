@@ -7,5 +7,7 @@ public interface GameScore{
 	*@throws correctCount < 0 
 	*@throws incorrectCount < 0 
 	***/
-	int calculateScore(int correctCount,int incorrectCount); 
+	int calculateScore(int correctCount,int incorrectCount);
+
+	int reset(); 
 }
