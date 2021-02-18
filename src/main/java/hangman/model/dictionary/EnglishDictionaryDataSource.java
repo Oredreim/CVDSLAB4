@@ -24,7 +24,7 @@ public class EnglishDictionaryDataSource extends HangmanDictionary {
     public EnglishDictionaryDataSource() {
         setAvalariableWords(Arrays.asList(words));
     }
-
+    
     public List<String> getAvailableWords() {
         return Arrays.asList(words);
     }

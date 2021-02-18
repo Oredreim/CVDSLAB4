@@ -30,23 +30,23 @@ public class GameModel {
     private GameScore score; 
     
     private HangmanDictionary dictionary;
-    
     private Scanner scan;
     private String randomWord;
     private char[] randomWordCharArray;
     
     
    
-    public GameModel(HangmanDictionary dictionary){
+    public GameModel(HangmanDictionary dictionary , GameScore score){
         //this.dictionary = new EnglishDictionaryDataSource();
         this.dictionary=dictionary;
+        this.score = score; 
         randomWord = selectRandomWord();
         randomWordCharArray = randomWord.toCharArray();
         incorrectCount = 0;
         correctCount = 0;
         gameScore = 100;
-        /******************/
-        score = new PowerScore(); 
+        
+        /*score = new PowerScore();*/ 
         
     }
     
